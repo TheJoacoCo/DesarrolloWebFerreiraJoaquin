@@ -8,8 +8,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000dff;
+    background-color: ffffff;
+    color: 30DBDA;
 }
 
 .container {
@@ -23,6 +23,11 @@ header {
     background-color: #ffffff;
     padding: 20px;
     text-align: center;
+}
+
+.logo img {
+    max-width: 100px;
+    height: 100px;
 }
 
 /* Barra de navegación */
@@ -45,7 +50,157 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000dff;
+    color: #30DBDA;
     text-decoration: none;
     padding: 5px 10px;
 }
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-icons {
+    margin-bottom: 20px;
+}
+
+.footer-icons h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-icons ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons li {
+    margin-right: 10px;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #f2f2f2;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.list-container {
+    display: flexbox;
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: justify;
+}
+
+/* Tienda */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item h2,
+.item p {
+    margin: 10px 0;
+}
+
+.item button {
+    padding: 10px 20px;
+    background-color: #212121;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item button:hover {
+    background-color: #000000;
+}
+
+/* Contacto */
+.image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-form {
+    text-align: center;
+    margin-top: 100px;
+    color: #ccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #212121;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+}
+
+/*# sourceMappingURL=styles.css.map */
