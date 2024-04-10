@@ -1,206 +1,201 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap');
 
-/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: ffffff;
-    color: 30DBDA;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Encabezado */
-header {
-    background-color: #ffffff;
-    padding: 20px;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Eczar", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
-.logo img {
-    max-width: 100px;
-    height: 100px;
-}
-
-/* Barra de navegación */
-nav {
-    background-color: #000000;
-    padding: 10px;
-    position:relative;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+.head {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #30DBDA;
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-/* Contenido principal */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Pie de Página */
-footer {
-    background-color: #000000;
-    padding: 20px;
-    text-align: center;
-    margin-top: auto;
-}
-
-.footer-icons {
-    margin-bottom: 20px;
-}
-
-.footer-icons h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer-icons ul {
-    list-style: none;
-    padding: 0;
+.navbar {
     display: flex;
-    justify-content: center;
-}
-
-.footer-icons li {
     margin-right: 10px;
 }
 
-.footer-icons img {
-    width: 30px;
-    height: 30px;
+.logo {
+    margin-left: 20px;
+    display: flex;
+    width: 10px;
+    height: 60px;
 }
 
-footer p {
-    margin: 10px 0;
-    color: #f2f2f2;
-}
-
-footer a {
+.navbar a {
+    display: block;
+    padding: 23px 20px;
     color: #ffffff;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.navbar a:hover {
+    background: #000000;
 }
 
-.list-container {
-    display: flexbox;
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.photo {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.header p{
+    font-size: 30px;
 }
 
-.description {
-    text-align: justify;
-}
-
-/* Tienda */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 20px;
-}
-
-.item {
-    text-align: center;
-}
-
-.item img {
-    width: 100%;
-    height: auto;
-}
-
-.item h2,
-.item p {
-    margin: 10px 0;
-}
-
-.item button {
-    padding: 10px 20px;
-    background-color: #212121;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.item button:hover {
-    background-color: #000000;
-}
-
-/* Contacto */
-.image-container {
-    position: fixed;
+#video-background {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    object-fit: cover;
     z-index: -1;
 }
 
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4694DB;
 }
 
-.contact-form {
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0 100px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #67DB6B;
+    color: #ffffff;
+    text-decoration: none;
+    background: #4694DB;
+
+}
+
+.button:hover {
+    background: none;
+}
+
+.button-home {
+    display: flex;
+}
+
+.button-home a {
+    margin: 0 10px;
+}
+
+.content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau{
+    padding: 40px;
+    background: #AFDBCF;
+    color: rgb(0, 0, 0);
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
-    margin-top: 100px;
-    color: #ccc;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    resize: vertical;
+.box-container .box {
+    height: 25rem;
+    width: 23rem;
+    background: #2EDB86;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem 2rem rgba(50, 217, 116, 85);
+    margin: 2rem;
 }
 
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #212121;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.icons-info {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #ffffff;
+    font-size: 2rem;
+    margin: 1rem 0;
+
 }
 
-.contact-form button:hover {
-    background-color: #000000;
+.box-container .box h3 {
+    font-size: 20px;
+    color: #ffffff;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background: #AFDBCF;
+}
+
+.imagen-estatica {
+    background: url(/img/pediatra1.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 20px;
+    background: #171717;
+    padding-bottom: 0;
+}
+
+@media (max-width:768px) {
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 120vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
