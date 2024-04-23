@@ -231,11 +231,9 @@ p {
 /* Sobre mi altura */
 @media (max-width:1400px) {
     .content.sau-2 {
-        height: 170vh;
+        height: 160vh;
     }
 }
-
-
 
 @media (max-width:920px) {
     .content.sau-2 {
