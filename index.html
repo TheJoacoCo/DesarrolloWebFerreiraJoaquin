@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Breve descripcion"
-        content="La Dra Liliana Xibilia ahora se encuentra en las redes sociales. Pide un turno online o en persona todo con el click de un boton.">
-        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <meta name="description" content="La Dra Liliana Xibilia ahora se encuentra en las redes sociales. Pide un turno online o en persona todo con el click de un boton.">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>Liliana Xibilia Pediatra</title>
 </head>
-
 
 <body>
     <div class="head">
@@ -23,24 +21,20 @@
             <a href="#mision">Misión</a>
             <a href="#metodos-de-pago">Métodos de Pago</a>
             <a href="#contacto">Contacto</a>
-
         </nav>
     </div>
 
     <header class="content header" id="inicio">
-        <p>
-            Con pasión por la cura, con amor por la vida.
-        </p>
+        <p>Con pasión por la cura, con amor por la vida.</p>
         <div class="video-container">
             <video autoplay muted loop id="video-background">
-                <source src="./video/video1.mp4" type="video/mp4">
+                <source src="/video/video1.mp4" type="video/mp4">
             </video>
         </div>
         <div class="button-home">
             <a href="#reservas" class="button">Reserva</a>
         </div>
     </header>
-
 
     <section class="content sau" id="sobre-mi">
         <h2 class="title">Sobre mí</h2>
@@ -58,36 +52,36 @@
         </p>
     </section>
 
-    <section class="content sau-2">
-        <h2 class="title" id="reservas">Reservas</h2>
+    <section class="content sau-2" id="reservas">
+        <h2 class="title">Reservas</h2>
         <div class="box-container">
             <div class="box">
-                <img class="icons-info" src="img/icono1.png" alt="Icono medicinal" width="40" height="40">
+                <img class="icons-info" src="/img/icono1.png" alt="Icono medicinal" width="40" height="40">
                 <h3>Consulta pediatrica presencial y virtual</h3>
                 <p>Desde el alta de neo hasta los 18 años, controles de peso, talla, examen físico, valoración nutricional y socioeducacional</p>
                 <a href="#reservas" class="button">Reserva</a>
             </div>
             <div class="box">
-                <img class="icons-info" src="img/icono2.png" alt="Icono medicinal" width="40" height="40">
+                <img class="icons-info" src="/img/icono2.png" alt="Icono medicinal" width="40" height="40">
                 <h3>Consulta prenatal</h3>
                 <p>Se recomienda despues de las 32 semanas, para elegir pediatra, preparse para la llegada del bebé. Obtener información para estar preparados. Despejar dudas.
                 </p>
                 <a href="#reservas" class="button">Reserva</a>
             </div>
             <div class="box">
-                <img class="icons-info" src="img/icono3.png" alt="Icono medicinal" width="40" height="40">
+                <img class="icons-info" src="/img/icono3.png" alt="Icono medicinal" width="40" height="40">
                 <h3>Atención de patologías pediatricas</h3>
                 <p>Desde un brocoespasmo hasta alteraciones del crecimiento. O desde una otitis a una neumonía. 
                     Con las correspondientes interconsultas con especialistas.</p>
                 <a href="#reservas" class="button">Reserva</a>
             </div>
             <div class="box">
-                <img class="icons-info" src="img/icono4.png" alt="Icono medicinal" width="40" height="40">
+                <img class="icons-info" src="/img/icono4.png" alt="Icono medicinal" width="40" height="40">
                 <h3>Control y actualización de vacunación</h3>
-            <a href="#reservas" class="button">Reserva</a>
+                <a href="#reservas" class="button">Reserva</a>
             </div>
             <div class="box">
-                <img class="icons-info" src="img/icono5.png" alt="Icono medicinal" width="40" height="40">
+                <img class="icons-info" src="/img/icono5.png" alt="Icono medicinal" width="40" height="40">
                 <h3>Aptos físicos</h3>
                 <p>Desde los necesarios para ingresar al colegio, clubes, etc. O posterior a una recuperación.</p>
                 <a href="#reservas" class="button">Reserva</a>
@@ -102,11 +96,10 @@
         su integración social, para que en definitiva puedan lograr elmáximo de sus potencialidades
         </p>
 
-        <a href="#" class="button">Saber mas</a>
+        <a href="#" class="button">Saber más</a>
     </section>
 
-    <section class="content imagen-estatica">
-    </section>
+    <section class="content imagen-estatica"></section>
 
     <section class="content about" id="metodos-de-pago">
         <article class="contain">
@@ -127,8 +120,43 @@
             <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Olivos/@-34.5227353,-58.4873023,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb14a15cc9643:0x
             745adafbf7636749!8m2!3d-34.5227397!4d-58.4847274!16s%2Fg%2F1vnnklhc?entry=ttu" target="_blank"><img src="img/mapa.png" height="220px" width="300px" alt="Mapa"></a>
         </figure>
+
+        <div class="content-contact">
+            <h2 class="title">Formulario de Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="form-message" class="form-message"></p>
+        </div>
     </section>
 
+    <div class="content-contact">  
+    <script>
+        // JavaScript para manejar el envío del formulario
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevenir el envío del formulario por defecto
+
+            // Obtener valores de los campos del formulario
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Simulación de envío del formulario
+            document.getElementById('form-message').innerHTML = 'Enviando...';
+            setTimeout(function () {
+                document.getElementById('form-message').innerHTML = 'Mensaje enviado!';
+                alert('Mensaje enviado exitosamente!');
+            }, 2000);
+        });
+    </script>
+    
+    </div>
 </body>
 
 </html>

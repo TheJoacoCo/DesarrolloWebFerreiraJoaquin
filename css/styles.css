@@ -172,7 +172,6 @@ p {
     background: #ffffff;
     font-size: 2rem;
     margin: 1rem 0;
-
 }
 
 .box-container .box h3 {
@@ -200,6 +199,53 @@ p {
     padding-top: 20px;
     background: #171717;
     padding-bottom: 0;
+    color: #ffffff; /* Asegura que el texto sea blanco para visibilidad */
+}
+
+.content-contact {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left; /* Opcional: para alinear el texto a la izquierda */
+    padding: 20px; /* Opcional: agregar padding para mejor espaciado */
+}
+
+.content-contact h2 {
+    color: #ffffff;
+}
+
+.content-contact label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.content-contact input, .content-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333; /* Fondo oscuro para contraste */
+    color: #ffffff; /* Texto blanco */
+}
+
+.content-contact button {
+    background: #4694DB;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-contact button:hover {
+    background: #367bb5;
+}
+
+#form-message {
+    margin-top: 10px;
+    color: #ffffff; /* Asegura que el mensaje sea visible */
 }
 
 /* Navbar */
@@ -232,10 +278,10 @@ p {
     .content.sau {
         height: 90vh;
     }
-    .content.sau-2{
+    .content.sau-2 {
         height: 130vh;
     }
-    .content.about{
+    .content.about {
         height: 110vh;
     }
 }
@@ -250,31 +296,31 @@ p {
     .content.sau {
         height: 110vh;
     }
-    .content.sau-2{
+    .content.sau-2 {
         height: 150vh;
     }
 }
 
 @media (max-width:700px) {
-    .content.sau{
+    .content.sau {
         height: 130vh;
     }
 }
 
 @media (max-width:650px) {
-    .content.sau{
+    .content.sau {
         height: 140vh;
     }
-    .content.sau-2{
+    .content.sau-2 {
         height: 180vh;
     }
 }
 
 @media (max-width:570px) {
-    .content.sau{
+    .content.sau {
         height: 190vh;
     }
-    .content.sau-2{
+    .content.sau-2 {
         height: 210vh;
     }
 }
